@@ -2,9 +2,9 @@
 <pmd-cpd xmlns="https://pmd-code.org/schema/cpd-report"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          pmdVersion="7.7.0"
-         timestamp="2024-11-18T12:51:47.3505641+01:00"
+         timestamp="2024-11-18T13:05:26.324957+01:00"
          version="1.0.0"
          xsi:schemaLocation="https://pmd-code.org/schema/cpd-report https://pmd.github.io/schema/cpd-report_1_0_0.xsd">
    <file path="C:\Users\alessandro.chierici2\Downloads\progettiJava\lab09_al3ck\91-bad-gui-io\src\main\java\it\unibo\mvc\BadIOGUI.java"
-         totalNumberOfTokens="404"/>
+         totalNumberOfTokens="409"/>
 </pmd-cpd>

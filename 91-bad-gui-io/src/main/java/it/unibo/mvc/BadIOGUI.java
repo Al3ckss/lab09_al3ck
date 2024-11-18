@@ -75,7 +75,8 @@ public class BadIOGUI {
             public void actionPerformed(final ActionEvent e) {
                 try {
                     final BufferedReader reader = new BufferedReader(new FileReader(PATH, StandardCharsets.UTF_8));
-                    System.out.println(reader.readLine());
+                    final String line = reader.readLine();
+                    System.out.println(line);
                     reader.close();
 
                 } catch (IOException e1) {
