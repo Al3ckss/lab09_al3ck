@@ -16,7 +16,8 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.nio.charset.StandardCharsets;
 import java.util.Random;
-
+import java.util.logging.Level; 
+import java.util.logging.Logger; 
 /**
  * This class is a simple application that writes a random number on a file.
  * 
@@ -73,14 +74,12 @@ public class BadIOGUI {
         read.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                try {
-                    final BufferedReader reader = new BufferedReader(new FileReader(PATH, StandardCharsets.UTF_8));
+                final Logger logger = Logger.getLogger(BadIOGUI.class.getName());
+                try (BufferedReader reader = new BufferedReader(new FileReader(PATH, StandardCharsets.UTF_8))) {
                     final String line = reader.readLine();
-                    System.out.println(line);
-                    reader.close();
-
-                } catch (IOException e1) {
-                    e1.printStackTrace(); // NOPMD: allowed as this is just an exercise
+                    logger.log(Level.INFO, line);
+                } catch (IOException ex) {
+                    logger.log(Level.SEVERE, "Error reading file", ex);
                 }
             }
         });
