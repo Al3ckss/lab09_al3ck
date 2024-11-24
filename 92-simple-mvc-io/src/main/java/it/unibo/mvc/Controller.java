@@ -16,12 +16,12 @@ public class Controller {
     private File currentFile = new File(transformToPath(firstfilename));
     
     public Controller(){
-        
     }
 
     String transformToPath(String filename){
         return System.getProperty("user.home") + System.getProperty("file.separator") + filename;
     }
+
     void setFileAsCurrent(File file){
         this.currentFile = file;
     }
