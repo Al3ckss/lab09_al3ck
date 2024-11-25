@@ -6,20 +6,8 @@ import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import java.awt.BorderLayout;
 import java.awt.event.ActionListener;
-import javax.swing.BoxLayout;
 import javax.swing.JOptionPane;
-import java.awt.Dimension;
-import java.awt.Toolkit;
-import java.awt.event.ActionEvent;
-import java.io.File;
-import java.io.IOException;
-import java.io.PrintStream;
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.nio.charset.StandardCharsets;
-import java.util.Random;
-import java.util.logging.Level; 
-import java.util.logging.Logger; 
+import java.awt.event.ActionEvent; 
 /**
  * A very simple program using a graphical interface.
  * 
